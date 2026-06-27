@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy — Subtitle Downloader</title>
+  <style>
+    body { max-width: 720px; margin: 40px auto; padding: 0 20px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      line-height: 1.6; color: #1a1a1a; }
+    h1 { font-size: 1.8rem; }
+    h2 { font-size: 1.2rem; margin-top: 2rem; }
+    .updated { color: #666; font-size: 0.9rem; }
+    code { background: #f4f4f4; padding: 1px 5px; border-radius: 4px; }
+  </style>
+</head>
+<body>
+  <h1>Privacy Policy — Subtitle Downloader</h1>
+  <p class="updated">Last updated: June 27, 2026</p>
+
+  <p>
+    Subtitle Downloader (the "extension") is a browser extension that detects
+    subtitle and caption files on the web pages you visit and lets you download
+    them as the original file, as SRT, or as plain text (TXT). This policy
+    explains how the extension handles data.
+  </p>
+
+  <h2>Data we collect</h2>
+  <p>
+    <strong>None.</strong> Subtitle Downloader does not collect, store, transmit,
+    or sell any personal or identifying information. We do not use analytics,
+    trackers, advertising, or any external servers.
+  </p>
+
+  <h2>How the extension works</h2>
+  <p>
+    The extension runs entirely inside your browser. To detect subtitles, it
+    inspects the metadata (URL and <code>Content-Type</code> header) of network
+    responses that load on the pages you visit. It does not read, record, or
+    transmit the contents of those requests or the pages themselves.
+  </p>
+  <p>
+    The list of detected subtitles for each tab is kept temporarily using your
+    browser's session storage (<code>chrome.storage.session</code>) so the data
+    survives the service worker being suspended. This data stays on your device
+    and is automatically cleared when your browsing session ends.
+  </p>
+
+  <h2>Downloads</h2>
+  <p>
+    When you click to download a subtitle, the extension fetches the subtitle
+    file from the URL you chose so its text can be read and converted to SRT or
+    TXT. This request goes directly from your browser to that site — the data is
+    never sent to us or to any third party.
+  </p>
+
+  <h2>Data sharing</h2>
+  <p>
+    Because no data is collected, no data is shared, sold, or transferred to
+    anyone. The extension does not load or execute any remote code; all code
+    ships inside the extension package.
+  </p>
+
+  <h2>Permissions</h2>
+  <p>
+    The extension requests only the permissions required for subtitle detection
+    (<code>webRequest</code>, <code>webNavigation</code>, <code>activeTab</code>,
+    <code>storage</code>, and the optional host permission you grant explicitly to
+    enable detection across sites). None of these are used to collect personal
+    data.
+  </p>
+
+  <h2>Changes to this policy</h2>
+  <p>
+    If this policy changes, the updated version will be posted on this page with a
+    new "Last updated" date.
+  </p>
+
+  <h2>Contact</h2>
+  <p>
+    Questions about this policy? Contact:
+    <a href="mailto:paulo@corcino.com.br">paulo@corcino.com.br</a>
+  </p>
+</body>
+</html>
